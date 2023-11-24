@@ -1,0 +1,176 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "george.bluth@reqres.in",
+      "username": "george",
+      "password": "qwerty1",
+      "role": "admin",
+      "first_name": "George",
+      "last_name": "Bluth",
+      "avatar": "/uploads/1-image.jpg"
+    },
+    {
+      "id": 2,
+      "email": "janet.weaver@reqres.in",
+      "username": "janet",
+      "password": "qwerty2",
+      "role": "user",
+      "first_name": "Janet",
+      "last_name": "Weaver",
+      "avatar": "/uploads/2-image.jpg"
+    },
+    {
+      "id": 3,
+      "email": "emma.wong@reqres.in",
+      "username": "emma",
+      "password": "qwerty3",
+      "role": "user",
+      "first_name": "Emma",
+      "last_name": "Wong",
+      "avatar": "/uploads/3-image.jpg"
+    },
+    {
+      "id": 4,
+      "email": "eve.holt@reqres.in",
+      "username": "eve",
+      "password": "qwerty4",
+      "role": "user",
+      "first_name": "Eve",
+      "last_name": "Holt",
+      "avatar": "/uploads/4-image.jpg"
+    },
+    {
+      "id": 5,
+      "email": "charles.morris@reqres.in",
+      "username": "charles",
+      "password": "qwerty5",
+      "role": "user",
+      "first_name": "Charles",
+      "last_name": "Morris",
+      "avatar": "/uploads/5-image.jpg"
+    },
+    {
+      "id": 6,
+      "email": "tracey.ramos@reqres.in",
+      "username": "tracey",
+      "password": "qwerty6",
+      "role": "user",
+      "first_name": "Tracey",
+      "last_name": "Ramos",
+      "avatar": "/uploads/6-image.jpg"
+    },
+    {
+      "email": "asd",
+      "username": "asd",
+      "password": "asd",
+      "role": "admin",
+      "first_name": "asd",
+      "last_name": "asd",
+      "id": 7
+    },
+    {
+      "email": "dfds",
+      "username": "sdf",
+      "password": "sdf",
+      "role": "admin",
+      "first_name": "asd",
+      "last_name": "asds",
+      "avatar": "/uploads/1697662152128-Ð¡Ð½Ð¸Ð¼Ð¾Ðº ÑÐºÑÐ°Ð½Ð° (591).png",
+      "id": 8
+    },
+    {
+      "email": "фывп",
+      "username": "фвыа",
+      "password": "фыва",
+      "role": "admin",
+      "first_name": "фыв",
+      "last_name": "фыв",
+      "avatar": "/uploads/1697681696615-Ð¡Ð½Ð¸Ð¼Ð¾Ðº ÑÐºÑÐ°Ð½Ð° (591).png",
+      "id": 9
+    }
+  ],
+  "tests": [
+    {
+      "id": 1,
+      "title": "Основы JavaScript",
+      "testImg": "/uploads/JavaSctipt.webp"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "type": "space",
+      "slice1": "English ",
+      "slice2": " language",
+      "imageUrl": null,
+      "testId": 1,
+      "answers": [
+        {
+          "id": 1,
+          "answer": "are",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "answer": "be",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "answer": "is",
+          "correct": true
+        },
+        {
+          "id": 4,
+          "answer": "was",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "space",
+      "slice1": "English ",
+      "slice2": " language",
+      "imageUrl": null,
+      "testId": 1,
+      "answers": [
+        {
+          "id": 1,
+          "answer": "are",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "answer": "be",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "answer": "is",
+          "correct": true
+        },
+        {
+          "id": 4,
+          "answer": "was",
+          "correct": false
+        }
+      ]
+    }
+  ],
+  "coursesList": [
+    {
+      "id": 1,
+      "title": "Курс по программированию на JavaScript",
+      "text": "В данном курсе вы можете ознакомиться с основами языка JavaScript",
+      "image": "/uploads/2.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Курс по программированию на C#",
+      "text": "В данном курсе вы можете ознакомиться с основами языка C#",
+      "image": "/uploads/2.jpg"
+    }
+  ]
+}
