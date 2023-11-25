@@ -88,13 +88,61 @@
       "last_name": "фыв",
       "avatar": "/uploads/1697681696615-Ð¡Ð½Ð¸Ð¼Ð¾Ðº ÑÐºÑÐ°Ð½Ð° (591).png",
       "id": 9
+    },
+    {
+      "email": "asd",
+      "username": "asd",
+      "password": "asd",
+      "role": "admin",
+      "first_name": "asdasd",
+      "last_name": "asd",
+      "id": 10
+    },
+    {
+      "email": "",
+      "username": "",
+      "password": "",
+      "role": "admin",
+      "first_name": "",
+      "last_name": "",
+      "id": 11
     }
   ],
   "tests": [
     {
       "id": 1,
-      "title": "Основы JavaScript",
-      "testImg": "/uploads/JavaSctipt.webp"
+      "course_id": 1,
+      "title": "Основы JavaScript"
+    },
+    {
+      "title": "asd",
+      "course_id": "asd",
+      "id": 5
+    },
+    {
+      "title": "HTML Basics",
+      "course_id": "2",
+      "id": 6
+    },
+    {
+      "title": "HTML5",
+      "course_id": "2",
+      "id": 7
+    },
+    {
+      "title": "JavaScript Functions",
+      "course_id": "1",
+      "id": 8
+    },
+    {
+      "title": "JavaScript Arrays",
+      "course_id": "1",
+      "id": 9
+    },
+    {
+      "title": "JavaScript Objects",
+      "course_id": "1",
+      "id": 10
     }
   ],
   "questions": [
@@ -103,7 +151,6 @@
       "type": "space",
       "slice1": "English ",
       "slice2": " language",
-      "imageUrl": null,
       "testId": 1,
       "answers": [
         {
@@ -131,9 +178,37 @@
     {
       "id": 2,
       "type": "space",
+      "slice1": "Eng ",
+      "slice2": " lang",
+      "testId": 1,
+      "answers": [
+        {
+          "id": 1,
+          "answer": "are",
+          "correct": false
+        },
+        {
+          "id": 2,
+          "answer": "be",
+          "correct": false
+        },
+        {
+          "id": 3,
+          "answer": "is",
+          "correct": true
+        },
+        {
+          "id": 4,
+          "answer": "was",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "space",
       "slice1": "English ",
       "slice2": " language",
-      "imageUrl": null,
       "testId": 1,
       "answers": [
         {
@@ -162,15 +237,51 @@
   "coursesList": [
     {
       "id": 1,
-      "title": "Курс по программированию на JavaScript",
-      "text": "В данном курсе вы можете ознакомиться с основами языка JavaScript",
-      "image": "/uploads/2.jpg"
+      "title": "Основы JavaScript",
+      "text": "Hello world",
+      "image": "/uploads/logo.png"
     },
     {
-      "id": 2,
-      "title": "Курс по программированию на C#",
-      "text": "В данном курсе вы можете ознакомиться с основами языка C#",
-      "image": "/uploads/2.jpg"
+      "title": "Курс по HTML",
+      "text": "hello",
+      "image": "/uploads/2.jpg",
+      "id": 2
+    },
+    {
+      "title": "Курс по CSS",
+      "text": "asd",
+      "image": "",
+      "id": 3
+    },
+    {
+      "title": "Курс по React",
+      "text": "asd",
+      "image": "",
+      "id": 4
+    },
+    {
+      "title": "Курс по SASS",
+      "text": "asd",
+      "image": "",
+      "id": 5
+    },
+    {
+      "title": "Курс по C#",
+      "text": "asd",
+      "image": "",
+      "id": 6
+    },
+    {
+      "title": "Курс по C++",
+      "text": "asd",
+      "image": "",
+      "id": 7
+    },
+    {
+      "title": "Курс по Unity",
+      "text": "asd",
+      "image": "",
+      "id": 8
     }
   ]
 }

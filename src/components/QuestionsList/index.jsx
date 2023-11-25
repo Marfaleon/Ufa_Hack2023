@@ -7,7 +7,19 @@ const QuestionsList = (props) => {
       <div className="exercises">Задания</div>
       <div className="questions-list">
         {props.questions.map((question) => (
-          <div className="exercise">{question.slice1}</div>
+          <div
+            className="exercise"
+            onClick={(e) => {
+              props.setQuestion(
+                e.target.innerHTML.substring(
+                  0,
+                  e.target.innerHTML.indexOf(". ")
+                ) - 1
+              );
+            }}
+          >
+            {question.id + ". " + question.slice1}
+          </div>
         ))}
       </div>
     </div>

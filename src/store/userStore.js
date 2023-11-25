@@ -4,6 +4,7 @@ class UserStore {
   _user = {};
   _loggedIn = false;
   _users_courses = [];
+  _tests = [];
 
   constructor() {
     makeAutoObservable(this);
@@ -23,6 +24,14 @@ class UserStore {
 
   get loggedIn() {
     return this._loggedIn;
+  }
+
+  addTest(testId, rAnswers) {
+    this._tests.push({ testId, rAnswers });
+  }
+
+  get Tests() {
+    return this._tests;
   }
 
   addCourse(courseId) {

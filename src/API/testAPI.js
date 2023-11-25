@@ -5,12 +5,12 @@ export const getTests = async () => {
   return res;
 };
 
-export const createTests = async (course) => {
+export const createTest = async (course) => {
   const res = await loggedInClient.post("/tests", course);
   return res;
 };
 
-export const deleteTests = async (course_id) => {
+export const deleteTest = async (course_id) => {
   const res = await loggedInClient.delete("/tests/" + course_id);
   return res;
 };

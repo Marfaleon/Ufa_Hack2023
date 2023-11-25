@@ -1,9 +1,10 @@
 .course-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 300px;
   height: 300px;
-  background-color: antiquewhite;
+  background-color: #a7c957;
   border-radius: 20px;
   box-shadow: 4px 4px 8px rgb(170, 170, 170);
   align-items: center;
@@ -32,8 +33,38 @@
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 700;
+  transition: 0.3s;
 }
 
 .open-course:hover {
-  box-shadow: 4px 4px 8px rgb(150, 150, 150);
+  box-shadow: 4px 4px 8px #657a34;
+}
+
+.open-course:active {
+  background-color: #7c3031;
+  box-shadow: none;
+}
+
+.course-del-btn {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  right: -50px;
+  top: 10px;
+  background-color: #bc4749;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.course-del-btn:hover {
+  background-color: #8f3738;
+}
+
+.course-del-btn:active {
+  background-color: #682829;
 }

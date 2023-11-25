@@ -1,0 +1,44 @@
+.auth-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-top: 20px;
+  align-items: center;
+  background-color: #a7c957;
+  width: 400px;
+  height: 300px;
+  justify-content: space-around;
+  box-shadow: 4px 4px 4px rgb(207, 207, 207);
+}
+
+.auth-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-field,
+.password-field,
+.auth-btn {
+  background-color: rgb(207, 207, 207);
+  height: 45px;
+  border-radius: 20px;
+  line-height: 45px;
+  width: 80%;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.auth-btn {
+  background-color: #bc4749;
+}
+
+#log-field,
+#pass-field {
+  background-color: rgb(207, 207, 207);
+  border: none;
+  width: 100%;
+  font-size: 25px;
+  line-height: 25px;
+}

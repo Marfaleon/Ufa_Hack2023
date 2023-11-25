@@ -23,7 +23,7 @@ class CourseStore {
       image: "/uploads/2.jpg",
     },
   ];
-  achivementsList = [
+  achievementsList = [
     {
       id: 1,
       title: "Kill developer",

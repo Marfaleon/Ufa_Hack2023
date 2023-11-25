@@ -12,3 +12,8 @@
 .answer-card:hover {
   box-shadow: 4px 4px 4px rgb(117, 117, 117);
 }
+
+.answer-card:active {
+  box-shadow: none;
+  background-color: rgb(172, 172, 172);
+}

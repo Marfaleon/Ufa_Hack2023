@@ -37,13 +37,4 @@
   width: 90%;
   border-bottom: 1px solid gray;
   text-overflow: ellipsis;
-  transition: 0.3s;
-}
-
-.exercise:hover {
-  background-color: rgb(219, 219, 219);
-}
-
-.exercise:active {
-  background-color: rgb(153, 153, 153);
 }

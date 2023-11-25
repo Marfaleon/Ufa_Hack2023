@@ -14,14 +14,12 @@ const Navbar = observer(() => {
   return (
     <div className="navbar">
       <div className="nav_buttons">
-        <div className="button">Новости</div>
         <Link className="button" to="/courses">
           Курсы
         </Link>
         <Link className="button" to="/tests/1">
-          FastQuestion
+          Быстрый вопрос
         </Link>
-        <div className="button">Новости</div>
       </div>
 
       <Link className="logo" to="/main">
