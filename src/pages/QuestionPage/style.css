@@ -1,7 +1,21 @@
+.question-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.white-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
 .progress-bar-part {
   overflow: hidden;
-  width: 300px;
-  height: 100px;
+  width: 80%;
+  height: 10px;
   border-radius: 50px;
   background-color: gray;
 }
@@ -13,4 +27,54 @@
   height: 100%;
   background-color: green;
   transition: 0.5s;
+}
+
+.block-placement {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  justify-content: center;
+  gap: 20px;
+}
+
+.block-placement2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(230, 230, 230);
+  width: 900px;
+  border-radius: 20px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.nav-part {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.past,
+.finish,
+.next {
+  background-color: #a7c957;
+  border-radius: 10px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 0.3s;
+}
+
+.past:hover,
+.finish:hover,
+.next:hover {
+  box-shadow: 4px 4px 4px #b3b3b3;
+}
+
+.past:active,
+.finish:active,
+.next:active {
+  background-color: #78913e;
 }

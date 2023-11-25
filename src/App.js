@@ -16,7 +16,7 @@ function App() {
   const loggedIn = false;
   const loggedInAdmin = false;
   return (
-    <BrowserRouter basename="process.env.PUBLIC_URL">
+    <BrowserRouter>
       <div className="app">
         <Routes>
           <Route path="/main" element={<StartPage />} />

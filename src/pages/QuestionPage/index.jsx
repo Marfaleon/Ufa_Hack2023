@@ -10,11 +10,12 @@ import {
 import { Context } from "../../index.js";
 import AnswerCard from "../../components/AnswerCard/index.jsx";
 import QuestionBlock from "../../components/QuestionBlock/index.jsx";
+import QuestionsList from "../../components/QuestionsList/index.jsx";
 
 const QuestionPage = observer(() => {
   const { courses } = useContext(Context);
 
-  const [currentQuestion, setCurrentQuestion] = useState();
+  const [currentQuestion, setCurrentQuestion] = useState(0);
 
   const getQuestionsList = async () => {
     const response = await getQuestions();
@@ -22,28 +23,52 @@ const QuestionPage = observer(() => {
     courses.setQuestions(response.data);
   };
 
-  function NavigateQuestions(e) {}
-
   useEffect(() => {
     getQuestionsList();
   }, []);
 
   return (
-    <div>
+    <div className="question-page">
       <Navbar />
-      <QuestionBlock
-        question={courses.questionsList[0]}
-        questions_count={courses.questionsList.length}
-      />
-      <div className="nav-part">
-        <div className="past">past</div>
-        <div className="finish">finish</div>
-        <div className="next" onClick={(e) => NavigateQuestions(e)}>
-          next
+      <div className="block-placement">
+        <QuestionsList questions={courses.questionsList} />
+
+        <div className="block-placement2">
+          <div className="progress-bar-part">
+            <div className="progress-bar"></div>
+          </div>
+
+          <div className="white-block">
+            <QuestionBlock
+              question={courses.questionsList[currentQuestion]}
+              questions_count={courses.questionsList.length}
+            />
+
+            <div className="nav-part">
+              {currentQuestion != 0 && (
+                <div
+                  className="past"
+                  onClick={() => {
+                    setCurrentQuestion(currentQuestion - 1);
+                  }}
+                >
+                  past
+                </div>
+              )}
+              <div className="finish">finish</div>
+              {currentQuestion != courses.questionsList.length - 1 && (
+                <div
+                  className="next"
+                  onClick={() => {
+                    setCurrentQuestion(currentQuestion + 1);
+                  }}
+                >
+                  next
+                </div>
+              )}
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="progress-bar-part">
-        <div className="progress-bar"></div>
       </div>
     </div>
   );

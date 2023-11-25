@@ -13,23 +13,24 @@ const Navbar = observer(() => {
 
   return (
     <div className="navbar">
-      <Link className="logo" to="/main">
-        SDO
-      </Link>
-
       <div className="nav_buttons">
         <div className="button">Новости</div>
         <Link className="button" to="/courses">
           Курсы
         </Link>
-        <Link className="button" to="/test/1">
+        <Link className="button" to="/tests/1">
           FastQuestion
         </Link>
         <div className="button">Новости</div>
-        <div className="buttontest" onClick={testing}>
-          test
-        </div>
       </div>
+
+      <Link className="logo" to="/main">
+        <img
+          src={process.env.REACT_APP_BASE_URL + "/uploads/logo.png"}
+          alt="logo"
+          className="logo-img"
+        />
+      </Link>
 
       {users.loggedIn ? (
         <div className="acc">

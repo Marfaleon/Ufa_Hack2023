@@ -23,6 +23,13 @@ class CourseStore {
       image: "/uploads/2.jpg",
     },
   ];
+  achivementsList = [
+    {
+      id: 1,
+      title: "Kill developer",
+      text: "You need to kill me",
+    },
+  ];
   questionsList = [
     {
       id: 1,

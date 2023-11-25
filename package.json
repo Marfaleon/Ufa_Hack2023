@@ -1,7 +1,6 @@
 {
-  "name": "fin-project",
+  "name": "hack-project",
   "version": "0.1.0",
-  "homepage": "https://Marfaleon.github.io/Ufa_Hack2023",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

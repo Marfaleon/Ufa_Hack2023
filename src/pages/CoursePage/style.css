@@ -1,0 +1,21 @@
+.course-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course-block-placement {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  background-color: aquamarine;
+}
+
+.course-white-block {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  gap: 10px;
+  background-color: bisque;
+}

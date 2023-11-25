@@ -1,11 +1,10 @@
 import React from "react";
+import "./style.css";
 
 const AnswerCard = (props) => {
   return (
-    <div onClick={props.onClick}>
-      <div className="answer-card">
-        <div className="answer-title">{props.answer}</div>
-      </div>
+    <div className="answer-card" onClick={props.onClick}>
+      <div className="answer-title">{props.answer}</div>
     </div>
   );
 };

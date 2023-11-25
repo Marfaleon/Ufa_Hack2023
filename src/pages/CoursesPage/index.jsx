@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { loggedInClient } from "../../API/index.js";
 import { createCourse, deleteCourse, getCourses } from "../../API/courseAPI.js";
 import { observer } from "mobx-react-lite";
+import "./style.css";
 
 const CoursesPage = observer(() => {
   const { courses } = useContext(Context);
@@ -22,7 +23,7 @@ const CoursesPage = observer(() => {
   }, []);
 
   return (
-    <div>
+    <div className="courses-page">
       <Navbar />
       <div className="tests-list">
         {courses.coursesList.map((course) => (

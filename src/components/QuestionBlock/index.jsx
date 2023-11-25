@@ -1,19 +1,6 @@
 import { observer } from "mobx-react-lite";
-import Navbar from "../../components/Navbar/index.jsx";
-import React, {
-  useState,
-  createRef,
-  useEffect,
-  useContext,
-  useMemo,
-} from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
-import {
-  createQuestions,
-  deleteQuestions,
-  getQuestions,
-} from "../../API/questionAPI.js";
-import { Context } from "../../index.js";
 import AnswerCard from "../../components/AnswerCard/index.jsx";
 
 const QuestionBlock = observer((props) => {
@@ -33,25 +20,28 @@ const QuestionBlock = observer((props) => {
   }
 
   useEffect(() => {
+    setQuestText(props.question.slice1 + "_____" + props.question.slice2);
     setPrbar(document.getElementsByClassName("progress-bar"));
   }, []);
 
   return (
-    <div>
-      <div className="quest-block">
-        <div className="img-part">
-          <img src="" alt="here is img" />
-        </div>
-        <div className="quest-part">{quest_text}</div>
-        <div className="answers-part">
-          {props.question.answers.map((course) => (
-            <AnswerCard
-              key={course.id}
-              answer={course.answer}
-              onClick={() => InsertAnswer(course.answer)}
-            />
-          ))}
-        </div>
+    <div className="quest-block">
+      <div className="img-part">
+        <img
+          src={process.env.REACT_APP_BASE_URL + "/uploads/logo.png"}
+          alt="here is img"
+          className="quest-img"
+        />
+      </div>
+      <div className="quest-part">{quest_text}</div>
+      <div className="answers-part">
+        {props.question.answers.map((course) => (
+          <AnswerCard
+            key={course.id}
+            answer={course.answer}
+            onClick={() => InsertAnswer(course.answer)}
+          />
+        ))}
       </div>
     </div>
   );
